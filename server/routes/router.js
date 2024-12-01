@@ -6,7 +6,7 @@ const authenticate = require("../middleware/authenticate");
 const nodemailer = require("nodemailer");
 const jwt = require("jsonwebtoken");
 
-const secretKey = "abcdefghijklmnopqrstuvwxyzvishal";
+const secretKey = process.env.SECRET_KEY;
 
 const transporter = nodemailer.createTransport({
   service: "gmail",
