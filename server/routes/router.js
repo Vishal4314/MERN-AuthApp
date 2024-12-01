@@ -11,8 +11,8 @@ const secretKey = "abcdefghijklmnopqrstuvwxyzvishal";
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "vishalmishra9351@gmail.com",
-    pass: "gnog fyut mtwn vppo",
+    user: process.env.USER,
+    pass: process.env.PASS,
   },
 });
 
